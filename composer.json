@@ -1,0 +1,30 @@
+{
+    "name": "mathieuviossat/fibonacci-heap",
+    "description": "PHP implementation of Fibonacci Heap",
+    "type": "library",
+    "keywords": [
+        "fibonacci",
+        "heap",
+        "priority",
+        "queue",
+        "list",
+        "binary",
+        "binomial",
+        "tree"
+    ],
+    "homepage": "https://github.com/MathieuViossat/fibonacci-heap",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mathieu Viossat",
+            "email": "mathieu@viossat.fr",
+            "homepage": "http://viossat.fr"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"MathieuViossat\\Util\\": "src/"}
+    },
+    "require": {
+        "php": ">=5.3.0"
+    }
+}
