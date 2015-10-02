@@ -43,7 +43,7 @@ while ($movie = $movies->extractMin())
 Returns the element with the lowest key, or null if the heap is empty.   
 Complexity: Θ(1)
 
-#### insert(int $key, mixed $data) : FibonacciHeapElement
+#### insert(int|float $key, mixed $data) : FibonacciHeapElement
 Inserts $data with the priority $key in the heap and return the element.   
 Complexity: Θ(1)
 
@@ -51,7 +51,7 @@ Complexity: Θ(1)
 Deletes the element with the lowest priority from the heap and return it.   
 Amortized complexity: O(log n)
 
-#### decreaseKey(FibonacciHeapElement $element, int $key) : void
+#### decreaseKey(FibonacciHeapElement $element, int|float $key) : void
 Replaces $element's key by $key. $key must be lower than the old key.   
 Amortized complexity: Θ(1)
 

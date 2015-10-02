@@ -26,8 +26,8 @@ class FibonacciHeap implements \Countable {
     }
 
     public function insert($key, $data) {
-        if (!is_int($key))
-            throw new \Exception('The key must be an integer');
+        if (!is_int($key) && !is_float($key))
+            throw new \Exception('The key must be an integer or a float');
 
         $x = new FibonacciHeapElement();
         $x->key = $key;
@@ -66,8 +66,8 @@ class FibonacciHeap implements \Countable {
     }
 
     public function decreaseKey(FibonacciHeapElement $element, $key) {
-        if (!is_int($key))
-            throw new \Exception('The key must be an integer');
+        if (!is_int($key) && !is_float($key))
+            throw new \Exception('The key must be an integer or a float');
         if ($key > $element->key)
             throw new \Exception('The new key must be lower than the old key');
 
